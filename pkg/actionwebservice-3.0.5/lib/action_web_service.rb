@@ -30,7 +30,7 @@ begin
   require 'actionpack'
   require 'active_support/core_ext/class/inheritable_attributes'
   require 'action_dispatch/routing'
-rescue LoadError
+rescue LoadError => le
   require 'rubygems'
   gem 'activesupport', '>=3.0.5'
   gem 'actionpack'   , '>=3.0.5'
