@@ -184,7 +184,7 @@ module ActionWebService
               parameters << content_tag('li', label + ' ' + nested_content)
             end
           end
-          content_tag('ul', parameters)
+          content_tag('ul', parameters.html_safe)
         else
           # If the data source was structured previously we already have the index set          
           field_name_base = "#{field_name_base}[#{idx}]" unless was_structured
