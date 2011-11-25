@@ -165,12 +165,13 @@ module ActionWebService # :nodoc:
         private
           def base_uri
             host = request.host_with_port
-            relative_url_root = ::ActionController::Base.relative_url_root
+            relative_url_root = web_service_base_address
             scheme = request.ssl? ? 'https' : 'http'
             '%s://%s%s/%s/' % [scheme, host, relative_url_root, self.class.controller_path]
           end
 
           def to_wsdl
+            debugger
             xml = ''
             inflect = web_service_inflect_type
             dispatching_mode = web_service_dispatching_mode
