@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name = 'actionwebservice'
   s.summary = "Web service support for Action Pack."
   s.description = %q{Adds WSDL/SOAP and XML-RPC web service support to Action Pack}
-  s.version = "3.0.5"
+  s.version = "3.0.6"
 
   s.author = "Laurence A. Lee, Leon Breedt, Kent Sibilev"
   s.email = "rubyjedi@gmail.com, bitserf@gmail.com, ksibilev@yahoo.com"
